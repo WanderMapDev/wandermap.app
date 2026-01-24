@@ -8,69 +8,73 @@
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
         h1 { color: #2c5530; }
         h2 { color: #4a7c59; margin-top: 30px; }
-        .highlight { background: #e8f5e8; padding: 15px; border-radius: 5px; margin: 20px 0; }
     </style>
 </head>
 <body>
-    <h1>🔒 WanderMap Privacy Policy</h1>
-    <p><strong>Last updated:</strong> September 2025</p>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> January 2026</p>
     
-    <div class="highlight">
-        <h2>🎯 What Makes WanderMap Different</h2>
-        <p>WanderMap is designed from the ground up to protect your privacy. We believe you should be able to track your adventures without giving up your personal data.</p>
-    </div>
+    <h2>The Short Version</h2>
+    <p>WanderMap doesn't store your GPS coordinates. It stores road segment IDs (like "174247412_10_17") that represent which roads you've traveled on. Segment IDs can optionally sync to a global community map, anonymously.</p>
     
-    <h2>📊 What We Store Permanently</h2>
-    <p>WanderMap stores only:</p>
+    <h2>What We Store</h2>
     <ul>
-        <li><strong>Road segment identifiers</strong> (like "174247412_10_17" - NOT your GPS coordinates)</li>
-        <li><strong>Administrative regions</strong> (city, county, state, country)</li>
-        <li><strong>App preferences</strong> and settings</li>
-        <li><strong>Segment lengths</strong> (for distance calculations)</li>
+        <li>Road segment identifiers (codes for which roads you've traveled)</li>
+        <li>Segment lengths (for distance calculations)</li>
+        <li>Administrative regions (city, county, state, country)</li>
+        <li>App settings</li>
     </ul>
     
-    <h2>🔧 How It Works</h2>
-    <ol>
-        <li>Your device's GPS location is used to identify nearby road segments</li>
-        <li>When you travel on a road, only the segment identifier is saved</li>
-        <li>GPS coordinates are processed temporarily for road detection but not stored permanently</li>
-        <li>All data stays on your device - nothing is uploaded to servers</li>
-    </ol>
-    
-    <h2>🐛 Optional Bug Reports</h2>
-    <p><strong>With your explicit consent,</strong> bug reports may include recent GPS data to help diagnose issues. You always choose whether to submit bug reports and can review the data before sending.</p>
-    
-    <h2>🚫 What We DON'T Store</h2>
+    <h2>What We Don't Store</h2>
     <ul>
-        <li>Your location history or travel patterns</li>
+        <li>GPS coordinates or location history</li>
         <li>Timestamps of when you visited places</li>
         <li>Personal identifying information</li>
-        <li>Photos or personal content</li>
+        <li>Travel patterns or routes</li>
     </ul>
     
-    <h2>🎛️ Your Control</h2>
+    <h2>How Detection Works</h2>
+    <p>Your GPS location is compared against OpenStreetMap roads to identify which segments you travel. GPS coordinates are used momentarily for detection, then discarded. Only the segment ID is saved.</p>
+    
+    <h2>Global Exploration Map</h2>
+    <p>WanderMap contributes to a community map showing which roads have been explored worldwide. When you explore a road, the segment ID and an anonymous device hash are uploaded. Nothing else. The hash counts unique visitors and is deleted after daily aggregation.</p>
+    <p>Your contributions can't be traced back to you. Imported segments are not synced to prevent inflating visit counts.</p>
+    <p>You can disable this by turning on Offline Mode in settings. You'll still see the global map, but your explorations won't be uploaded.</p>
+    
+    <h2>Bug Reports</h2>
+    <p>Bug reports are optional and may include recent GPS data to help diagnose issues. You can review the data before submitting. Reports are auto-deleted after 90 days.</p>
+    
+    <h2>Your Control</h2>
     <ul>
-        <li><strong>Export your data</strong> anytime as a JSON file</li>
-        <li><strong>Delete all data</strong> with one button in settings</li>
-        <li><strong>Use Privacy Mode</strong> to view history without GPS tracking</li>
-        <li><strong>Choose what to include</strong> in optional bug reports</li>
+        <li>Export your data anytime as a JSON file</li>
+        <li>Delete all data with one button in settings</li>
+        <li>Use Privacy Mode to view history without GPS tracking</li>
+        <li>Use Offline Mode to stop contributing to the global map</li>
     </ul>
     
-    <h2>🔐 Data Security</h2>
-    <p>All exploration data is stored locally on your device using Android's secure storage systems. Since we don't collect personal location data, there's minimal risk to your privacy.</p>
-
-    <h2>🕒 Data Retention</h2>
+    <h2>Data Security and Retention</h2>
+    <p>All data is stored locally using Android's secure storage. Since we don't collect personal location data, there's nothing to leak.</p>
     <ul>
-        <li><strong>Local exploration data:</strong> Stored until you delete it</li>
-        <li><strong>Crash reports:</strong> Automatically deleted after 90 days</li>
-        <li><strong>App preferences:</strong> Stored until you delete the app or clear data</li>
+        <li>Exploration data is stored until you delete it</li>
+        <li>Bug reports are auto-deleted after 90 days</li>
+        <li>Visitor hashes are deleted after daily aggregation</li>
     </ul>
     
-    <h2>📧 Contact Us</h2>
-    <p>Questions about this privacy policy? Email us at: <a href="mailto:developer@wandermap.app">developer@wandermap.app</a></p>
+    <h2>No Account Required</h2>
+    <p>WanderMap doesn't require an account or login. We have no way to identify you.</p>
     
-    <p><strong>Note:</strong> This policy may be updated as the app evolves. The latest version is always available at wandermap.app/privacy</p>
+    <h2>Children's Privacy</h2>
+    <p>WanderMap is not directed at children under 13. We do not knowingly collect data from children.</p>
     
-    <p><a href="/">← Back to WanderMap</a></p>
+    <h2>Map Data</h2>
+    <p>Road data comes from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> under the <a href="https://opendatacommons.org/licenses/odbl/">Open Database License</a>.</p>
+    
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy occasionally. Significant changes will be announced in the app.</p>
+    
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:developer@wandermap.app">developer@wandermap.app</a></p>
+    
+    <p style="margin-top: 30px;"><a href="/">Back to WanderMap</a></p>
 </body>
 </html>
