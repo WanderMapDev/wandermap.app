@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> January 2026</p>
+    <p><strong>Last updated:</strong> April 2026</p>
     
     <h2>The Short Version</h2>
     <p>WanderMap doesn't store your GPS coordinates. It stores road segment IDs (like "174247412_10_17") that represent which roads you've traveled on. Segment IDs can optionally sync to a global community map, anonymously.</p>
@@ -37,9 +37,20 @@
     <p>Your GPS location is compared against OpenStreetMap roads to identify which segments you travel. GPS coordinates are used momentarily for detection, then discarded. Only the segment ID is saved.</p>
     
     <h2>Global Exploration Map</h2>
-    <p>WanderMap contributes to a community map showing which roads have been explored worldwide. When you explore a road, the segment ID and an anonymous device hash are uploaded. Nothing else. The hash counts unique visitors and is deleted after daily aggregation.</p>
-    <p>Your contributions can't be traced back to you. Imported segments are not synced to prevent inflating visit counts.</p>
-    <p>You can disable this by turning on Offline Mode in settings. You'll still see the global map, but your explorations won't be uploaded.</p>
+    <p>WanderMap contributes to a community map showing which roads have been explored worldwide. When you explore a road, the segment ID and an anonymous device identifier (a 64-character SHA-256 hash of a randomly generated UUID) are uploaded. Nothing else.</p>
+    <p><strong>Lawful basis (GDPR):</strong> explicit consent. Sharing is off by default and only happens after you enable the "Diagnostics &amp; Coverage" toggle in Settings. You can revoke consent at any time by turning the toggle back off.</p>
+    <p><strong>What's uploaded:</strong> visited segment IDs and your anonymous identifier hash. Imported segments are not synced to prevent inflating visit counts. We never upload GPS coordinates, timestamps, names, or email addresses.</p>
+    <p><strong>Retention:</strong> the identifier hash is stored alongside each contribution so we can de-duplicate future uploads from the same device. Counts are recomputed daily; the hash itself remains until you request erasure.</p>
+    <p><strong>Traceability:</strong> the hash is one-way and contains no personal information. Without your cooperation (sharing your identifier with us), we have no way to link contributions back to you.</p>
+
+    <h2>Your Right to Erasure (GDPR Art. 17)</h2>
+    <p>You can request deletion of all coverage you've shared. Because we don't have accounts, we need your anonymous identifier to find your contributions:</p>
+    <ol>
+        <li>Open WanderMap and go to <strong>Settings &rarr; Privacy</strong></li>
+        <li>Tap <strong>Copy identifier</strong> (or use the <strong>Email support to delete</strong> shortcut, which prefills everything)</li>
+        <li>Email <a href="mailto:support@wandermap.app?subject=Delete my coverage data">support@wandermap.app</a> with the identifier in the body</li>
+    </ol>
+    <p>Erasure typically completes within a few business days. The next daily aggregation removes your contributions from the public counts.</p>
     
     <h2>Bug Reports</h2>
     <p>Bug reports are optional and may include recent GPS data to help diagnose issues. You can review the data before submitting. Reports are auto-deleted after 90 days.</p>
@@ -57,7 +68,7 @@
     <ul>
         <li>Exploration data is stored until you delete it</li>
         <li>Bug reports are auto-deleted after 90 days</li>
-        <li>Visitor hashes are deleted after daily aggregation</li>
+        <li>Anonymous identifier hashes from shared coverage are retained for de-duplication and removed on request (see Your Right to Erasure above)</li>
     </ul>
     
     <h2>No Account Required</h2>
@@ -73,7 +84,7 @@
     <p>We may update this policy occasionally. Significant changes will be announced in the app.</p>
     
     <h2>Contact</h2>
-    <p>Questions? Email <a href="mailto:developer@wandermap.app">developer@wandermap.app</a></p>
+    <p>Questions or erasure requests? Email <a href="mailto:support@wandermap.app">support@wandermap.app</a></p>
     
     <p style="margin-top: 30px;"><a href="/">Back to WanderMap</a></p>
 </body>
